@@ -10,6 +10,10 @@ const app = express();
 // Connect Database
 connectDB();
 
+setInterval(() => {
+    updateHolders ();
+}, 60*1000);
+
 // Init Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -24,8 +28,6 @@ app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
 // app.listen(PORT, HOST, () => console.log(`Server started on port ${PORT} and on host ${HOST}`));
 
 
-setInterval(() => {
-    updateHolders ();
-}, 60*1000);
+
 // syncTrade();
 // syncHistory();
