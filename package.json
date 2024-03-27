@@ -1,13 +1,14 @@
 {
-  "name": "mars",
+  "name": "marswtf-backend",
   "version": "1.0.0",
-  "description": "this is mars backend",
-  "main": "server",
+  "description": "",
+  "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js",
     "start": "node server.js"
   },
-  "author": "ninja",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^1.6.8",
@@ -16,7 +17,9 @@
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-validator": "^7.0.1",
-    "mongoose": "^8.2.3",
+    "mongoose": "^8.2.3"
+  },
+  "devDependencies": {
     "nodemon": "^3.1.0"
   }
 }
