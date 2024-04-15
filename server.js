@@ -14,6 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 // Define Routes
 app.use('/api/holders', require('./routes/api/holders'));
+app.use('/api/presale', require('./routes/api/presale'));
 
 const PORT = process.env.PORT || 5000;
 const HOST = process.env.HOST || '45.8.22.219';
