@@ -10,9 +10,9 @@ const app = express();
 // Connect Database
 connectDB();
 
-setInterval(() => {
-    updateHolders ();
-}, 60*1000);
+// setInterval(() => {
+//     updateHolders ();
+// }, 60*1000);
 
 // Init Middleware
 app.use(express.json());
