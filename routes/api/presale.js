@@ -20,5 +20,11 @@ router.post('/', async (req, res) => {
     // res.json({holders: data})
     res.json({ status: "SUCCESS" })
 });
+router.put('/', async (req, res) => {
+    let { stage, sold, price } = req.body;
+    console.log("update ---->", { stage, sold, price });
+    await Presales.findOneAndUpdate({ stage }, { sold, price });
+    res.json({ status: "SUCCESS" })
+});
 
 module.exports = router;

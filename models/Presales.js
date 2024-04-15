@@ -11,7 +11,7 @@ const PresaleSchema = new Schema(
       type: Number,
       required: true,
     },
-    sell: {
+    sold: {
       type: Number,
       default: 0
     },
